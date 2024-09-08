@@ -1,6 +1,7 @@
 import { formatAmount } from '@/lib/utils'
 import React from 'react'
 import dynamic from 'next/dynamic';
+import DoughnutChart from './DoughnutChart';
 
 const AnimatedCounter = dynamic(() => import('./AnimatedCounter'), { ssr: false });
 
@@ -8,7 +9,7 @@ const TotalBalanceBox = ({accounts = [], totalBanks, totalCurrentBalance}: Totla
   return (
     <section className='total-balance'>
         <div className='total-balance-chart'>
-            
+            <DoughnutChart />
         </div>
 
         <div className='flex flex-col gap-6'>
