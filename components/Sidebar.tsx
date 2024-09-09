@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { sidebarLinks } from '@/constants'
 
 const Sidebar = ({user}: SiderbarProps) => {
   return (
@@ -18,6 +19,14 @@ const Sidebar = ({user}: SiderbarProps) => {
                     Horizon
                 </h1>
             </Link>
+            {sidebarLinks.map((item) => {
+                    return (
+                        <Link href={item.route} key={item.label}>
+                            {item.label}
+                        </Link>
+                    )
+                }
+            )}
         </nav>
     </section>
   )
