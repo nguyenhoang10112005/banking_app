@@ -2,10 +2,11 @@ import { formatAmount } from '@/lib/utils'
 import React from 'react'
 import dynamic from 'next/dynamic';
 import DoughnutChart from './DoughnutChart';
+import { TotlaBalanceBoxProps } from '@/types';
 
 const AnimatedCounter = dynamic(() => import('./AnimatedCounter'), { ssr: false });
 
-const TotalBalanceBox = ({accounts = [], totalBanks, totalCurrentBalance}: TotlaBalanceBoxProps) => {
+const TotalBalanceBox = ({accounts = [], totalBanks, totalCurrentBalance} : TotlaBalanceBoxProps) => {
   return (
     <section className='total-balance'>
         <div className='total-balance-chart'>
