@@ -5,8 +5,9 @@ import Image from 'next/image'
 import { sidebarLinks } from '@/constants'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
+import { SiderbarProps } from '@/types'
 
-const Sidebar = ({user}: SiderbarProps) => {
+const Sidebar = ({user} : SiderbarProps) => {
     const pathname = usePathname();
   return (
     <section className='sidebar'>

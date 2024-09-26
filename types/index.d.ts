@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-vars */
 
+import { Control, UseFormReturn } from "react-hook-form";
+
 declare type SearchParamProps = {
   params: { [key: string]: string };
   searchParams: { [key: string]: string | string[] | undefined };
@@ -135,7 +137,6 @@ declare type NewDwollaCustomerParams = {
   dateOfBirth: string;
   ssn: string;
 };
-
 declare interface CreditCardProps {
   account: Account;
   userName: string;

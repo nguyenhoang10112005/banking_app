@@ -1,9 +1,9 @@
 import React from 'react'
 
-const paymentTransfer = () => {
+const Transfer = () => {
   return (
-    <div>paymentTransfer</div>
+    <div>Transfer</div>
   )
 }
 
-export default paymentTransfer
+export default Transfer
